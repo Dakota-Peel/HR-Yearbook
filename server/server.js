@@ -9,9 +9,9 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
-var path = require('path');;
+var path = require('path');
 
-var router = require('./routers/router.js')
+var router = require('./routers/router.js');
 
 var app = express();
 
@@ -23,4 +23,4 @@ app.use(express.static(path.join(__dirname, "../client")));
 app.use('/api', router);
 
 console.log('Hack Reactor Yearbook Listening on ' + port);
-app.listen(port);  
+app.listen(port); 
